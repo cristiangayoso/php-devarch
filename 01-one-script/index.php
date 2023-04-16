@@ -54,7 +54,7 @@ $users = $db->query("SELECT id, login FROM users");
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>PHP-DevArch :: Native PHP</title>
     <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.0/assets/css/docs.css" rel="stylesheet">
   </head>
