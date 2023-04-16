@@ -1,0 +1,19 @@
+CRITICAL - 2023-04-15 22:06:45 --> Undefined variable $userModel
+in APPPATH/Controllers/Users.php on line 24.
+ 1 APPPATH/Controllers/Users.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 22:07:18 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Users.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 22:09:16 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Users.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

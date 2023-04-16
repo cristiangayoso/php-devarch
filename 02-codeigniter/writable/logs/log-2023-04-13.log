@@ -1,0 +1,47 @@
+CRITICAL - 2023-04-13 21:19:16 --> Cannot instantiate abstract class App\Controllers\BaseController
+in SYSTEMPATH/CodeIgniter.php on line 906.
+ 1 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 21:20:01 --> Cannot instantiate abstract class App\Controllers\BaseController
+in SYSTEMPATH/CodeIgniter.php on line 906.
+ 1 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 21:22:28 --> Undefined variable $users
+in APPPATH/Views/Users/crud.php on line 34.
+ 1 APPPATH/Views/Users/crud.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Views/Users/crud.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/User.php(9): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 21:23:15 --> Unclosed '{' on line 34
+in APPPATH/Views/Users/crud.php on line 81.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/User.php(9): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 21:23:31 --> Undefined variable $login
+in APPPATH/Views/Users/crud.php on line 57.
+ 1 APPPATH/Views/Users/crud.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Views/Users/crud.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/User.php(9): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 21:27:10 --> Too few arguments to function App\Controllers\Users::index(), 0 passed in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH/Controllers/Users.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

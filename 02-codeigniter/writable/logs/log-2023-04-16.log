@@ -1,0 +1,534 @@
+CRITICAL - 2023-04-16 20:51:13 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Users.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:51:37 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Users.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:52:19 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Users.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:52:40 --> Call to a member function list() on null
+in APPPATH/Controllers/Users.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:52:57 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Users.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:54:36 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Users.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:55:07 --> Declaration of App\Models\UserModel::findAll() must be compatible with CodeIgniter\BaseModel::findAll(int $limit = 0, int $offset = 0)
+in APPPATH/Models/UserModel.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-04-16 20:55:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(174): mysqli->real_connect()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-16 20:55:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:56:33 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php on line 242
+in SYSTEMPATH/Database/BaseResult.php on line 103.
+ 1 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseResult->getResult()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:57:12 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php on line 242
+in SYSTEMPATH/Database/BaseResult.php on line 103.
+ 1 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseResult->getResult()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:57:17 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php on line 242
+in SYSTEMPATH/Database/BaseResult.php on line 103.
+ 1 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseResult->getResult()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:57:48 --> Class "App\Models\Database" not found
+in APPPATH/Models/UserModel.php on line 26.
+ 1 SYSTEMPATH/Config/Factories.php(129): App\Models\UserModel->__construct()
+ 2 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 3 SYSTEMPATH/Common.php(829): CodeIgniter\Config\Factories::models()
+ 4 APPPATH/Controllers/Users.php(24): model()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:57:54 --> Call to undefined function App\Models\__construct()
+in APPPATH/Models/UserModel.php on line 26.
+ 1 SYSTEMPATH/Config/Factories.php(129): App\Models\UserModel->__construct()
+ 2 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 3 SYSTEMPATH/Common.php(829): CodeIgniter\Config\Factories::models()
+ 4 APPPATH/Controllers/Users.php(24): model()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:58:27 --> Call to undefined function App\Models\__construct()
+in APPPATH/Models/UserModel.php on line 27.
+ 1 SYSTEMPATH/Config/Factories.php(129): App\Models\UserModel->__construct()
+ 2 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 3 SYSTEMPATH/Common.php(829): CodeIgniter\Config\Factories::models()
+ 4 APPPATH/Controllers/Users.php(24): model()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:59:22 --> Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/Users.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:59:28 --> Call to undefined function App\Models\__construct()
+in APPPATH/Models/UserModel.php on line 27.
+ 1 APPPATH/Controllers/Users.php(26): App\Models\UserModel->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 20:59:41 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php on line 242
+in SYSTEMPATH/Database/BaseResult.php on line 103.
+ 1 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseResult->getResult()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:06 --> mysqli_sql_exception: Unknown column 'users.tstamp_delete' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:06 --> Unknown column 'users.tstamp_delete' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:23 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:23 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:33 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:33 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:33 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:33 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:34 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:34 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:34 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:34 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:34 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:34 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:34 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:34 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:35 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:35 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:35 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:35 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:46 --> mysqli_sql_exception: Unknown column 'users.tstamp_delete' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:46 --> Unknown column 'users.tstamp_delete' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:47 --> mysqli_sql_exception: Unknown column 'users.tstamp_delete' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:47 --> Unknown column 'users.tstamp_delete' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-16 21:00:55 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/app/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+#7 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(934): App\Controllers\Users->delete()
+#8 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/cristiangayoso.cl/php-devarch/02-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-16 21:00:55 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Users.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->delete()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 21:39:14 --> syntax error, unexpected identifier "__construct", expecting variable
+in APPPATH/Controllers/Users.php on line 9.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 21:40:20 --> Could not check compatibility between App\Controllers\Users::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Users.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-16 21:40:38 --> Cannot assign App\Models\UserModel to property App\Controllers\Users::$userModel of type App\Controllers\UserModel
+in APPPATH/Controllers/Users.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\Users->initController()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-16 21:46:34 --> Undefined variable $data
+in APPPATH/Controllers/Users.php on line 48.
+ 1 APPPATH/Controllers/Users.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Users->update()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
